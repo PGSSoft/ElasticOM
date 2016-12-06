@@ -1,3 +1,5 @@
+![PGS Software](https://github.com/PGSSoft/ParallaxView/raw/master/Assets/pgssoft-logo.png) 
+
 # PGS Software / ElasticOM
 
 [![Latest Stable Version](https://img.shields.io/packagist/v/pgs-soft/elastic-om.svg)](https://packagist.org/packages/pgs-soft/elastic-om)
@@ -140,3 +142,20 @@ Specifies property to be mapped into elasticsearch type. Available parameters:
         // ...
     ];
 ```
+
+
+## Contributing
+
+Bug reports and pull requests are welcome on GitHub at [https://github.com/PGSSoft/ElasticOM](https://github.com/PGSSoft/ElasticOM).
+
+
+## About
+
+The project maintained by [software development agency](https://www.pgs-soft.com/) [PGS Software](https://www.pgs-soft.com/).
+See our other [open-source projects](https://github.com/PGSSoft) or [contact us](https://www.pgs-soft.com/contact-us/) to develop your product.
+
+
+## Follow us
+
+[![Twitter URL](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=https://github.com/PGSSoft/InAppPurchaseButton)  
+[![Twitter Follow](https://img.shields.io/twitter/follow/pgssoftware.svg?style=social&label=Follow)](https://twitter.com/pgssoftware)
