@@ -1,11 +1,11 @@
-![PGS Software](https://github.com/PGSSoft/ParallaxView/raw/master/Assets/pgssoft-logo.png) 
+![PGS Software](https://github.com/PGSSoft/ParallaxView/raw/master/Assets/pgssoft-logo.png)
 
 # PGS Software / ElasticOM
 
 [![Latest Stable Version](https://img.shields.io/packagist/v/pgs-soft/elastic-om.svg)](https://packagist.org/packages/pgs-soft/elastic-om)
 [![PHP Version](https://img.shields.io/badge/php-%3E%3D%207.0-8892BF.svg)](https://php.net)
-[![License](https://img.shields.io/github/license/pgs-soft/elastic-om.svg)](https://packagist.org/packages/pgs-soft/elastic-om)
-[![Build Status](https://travis-ci.org/pgs-soft/elastic-om.svg?branch=master)](https://travis-ci.org/pgs-soft/elastic-om)
+[![License](https://img.shields.io/github/license/PGSSoft/ElasticOM.svg)](https://packagist.org/packages/pgs-soft/elastic-om)
+[![Build Status](https://travis-ci.org/PGSSoft/ElasticOM.svg?branch=master)](https://travis-ci.org/PGSSoft/ElasticOM)
 
 Elasticsearch Object Mapper. Includes integration with Symfony 2.7+ and Zend Framework 3.
 
@@ -73,7 +73,7 @@ Marks class property to be used as unique object identifier. Only one property c
 
 #### Field
 
-Specifies property to be mapped into elasticsearch type. Available parameters: 
+Specifies property to be mapped into elasticsearch type. Available parameters:
 
  - **type** - elasticsearch mapping type for the property. List of all types can be found here: https://www.elastic.co/guide/en/elasticsearch/reference/current/mapping-types.html
  - **targetClass** - if type is _object_ or _nested_, **targetClass** specifies nested object class
@@ -157,5 +157,5 @@ See our other [open-source projects](https://github.com/PGSSoft) or [contact us]
 
 ## Follow us
 
-[![Twitter URL](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=https://github.com/PGSSoft/InAppPurchaseButton)  
+[![Twitter URL](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=https://github.com/PGSSoft/InAppPurchaseButton)
 [![Twitter Follow](https://img.shields.io/twitter/follow/pgssoftware.svg?style=social&label=Follow)](https://twitter.com/pgssoftware)
