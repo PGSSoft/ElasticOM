@@ -1,0 +1,31 @@
+git:
+    depth: 1
+
+cache:
+    directories:
+        - $HOME/.composer/cache
+
+sudo: false
+
+language: php
+
+matrix:
+    include:
+        - php: '7.0'
+          env:
+              - COMPOSER_FLAGS='--prefer-lowest'
+        - php: '7.0'
+        - php: '7.1'
+        - php: 'nightly'
+
+before_install:
+    - composer self-update
+
+install:
+    - composer install $COMPOSER_FLAGS
+
+script:
+    - vendor/bin/phpcs --report-full --standard=PSR2 src tests
+    - vendor/bin/php-cs-fixer fix --config=.php_cs --dry-run --diff src tests
+    - vendor/bin/types-checker --exclude=Pgs\\ElasticOM\\EntityRepository --exclude=Pgs\\ElasticOM\\Hydrator\\Hydrator --exclude=Pgs\\ElasticOM\\ObjectPool --exclude=Elasticsearch\\Serializers\\SerializerInterface --exclude=Tests\\Bridge\\Symfony\\ConfigurationTest --exclude=Zend\\Hydrator\\Strategy\\StrategyInterface --skip-return-types src tests
+    - phpdbg -qrr vendor/bin/phpunit

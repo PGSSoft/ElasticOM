@@ -1,0 +1,43 @@
+{
+    "name": "pgs-soft/elastic-om",
+    "type": "library",
+    "description": "Elasticsearch Object Mapper",
+    "keywords": [ "php", "elasticsearch", "object mapper" ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tomasz Brzeziński",
+            "email": "tbrzezinski@pgs-soft.com"
+        },
+        {
+            "name": "Kuba Werłos",
+            "email": "jwerlos@pgs-soft.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Pgs\\ElasticOM\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "require": {
+        "php": ">=7",
+        "doctrine/annotations": "^1",
+        "elasticsearch/elasticsearch": "^2.2.2 | ^5",
+        "zendframework/zend-hydrator": "^2"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^2",
+        "kubawerlos/types-checker": "^1.0.1",
+        "matthiasnoback/symfony-config-test": "^2",
+        "phpunit/phpunit": "^5.4.3",
+        "squizlabs/php_codesniffer": "^2.7",
+        "symfony/dependency-injection": "^2.7 | ^3",
+        "symfony/http-kernel": "^2.7 | ^3",
+        "zendframework/zend-servicemanager": "^3"
+    }
+}
