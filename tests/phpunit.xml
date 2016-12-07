@@ -2,7 +2,7 @@
 <phpunit backupGlobals='false'
          backupStaticAttributes='false'
          beStrictAboutTestsThatDoNotTestAnything='true'
-         bootstrap='vendor/autoload.php'
+         bootstrap='../vendor/autoload.php'
          colors='true'
          convertErrorsToExceptions='true'
          convertNoticesToExceptions='true'
@@ -23,7 +23,7 @@
 
     <testsuites>
         <testsuite name='main'>
-            <directory>./tests</directory>
+            <directory>.</directory>
         </testsuite>
     </testsuites>
 
@@ -33,7 +33,7 @@
 
     <filter>
         <whitelist>
-            <directory>./src</directory>
+            <directory>../src</directory>
         </whitelist>
     </filter>
 

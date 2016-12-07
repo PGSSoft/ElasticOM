@@ -19,6 +19,7 @@ matrix:
         - php: 'nightly'
           env:
               - COMPOSER_FLAGS='--ignore-platform-reqs'
+              - SKIP_PHP_CS_FIXER='yes'
 
 before_install:
     - composer self-update
@@ -28,6 +29,6 @@ install:
 
 script:
     - vendor/bin/phpcs --report-full --standard=PSR2 src tests
-    - (vendor/bin/php-cs-fixer fix --config=.php_cs --dry-run --diff src tests || exit 0)
+    - if [ ! $SKIP_PHP_CS_FIXER ]; then vendor/bin/php-cs-fixer fix --config=tests/php-cs-fixer.config.php --dry-run --diff src tests; fi
     - vendor/bin/types-checker --exclude=Pgs\\ElasticOM\\EntityRepository --exclude=Pgs\\ElasticOM\\Hydrator\\Hydrator --exclude=Pgs\\ElasticOM\\ObjectPool --exclude=Elasticsearch\\Serializers\\SerializerInterface --exclude=Tests\\Bridge\\Symfony\\ConfigurationTest --exclude=Zend\\Hydrator\\Strategy\\StrategyInterface --skip-return-types src tests
-    - phpdbg -qrr vendor/bin/phpunit
+    - phpdbg -qrr vendor/bin/phpunit -c tests/phpunit.xml
