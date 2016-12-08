@@ -1,11 +1,11 @@
-![PGS Software](https://github.com/PGSSoft/ParallaxView/raw/master/Assets/pgssoft-logo.png)
-
-# PGS Software / ElasticOM
+# [![PGS Software](https://www.pgs-soft.com/pgssoft-logo.png)](https://www.pgs-soft.com) / ElasticOM
 
 [![Latest Stable Version](https://img.shields.io/packagist/v/pgs-soft/elastic-om.svg)](https://packagist.org/packages/pgs-soft/elastic-om)
 [![PHP Version](https://img.shields.io/badge/php-%3E%3D%207.0-8892BF.svg)](https://php.net)
 [![License](https://img.shields.io/github/license/PGSSoft/ElasticOM.svg)](https://packagist.org/packages/pgs-soft/elastic-om)
-[![Build Status](https://travis-ci.org/PGSSoft/ElasticOM.svg?branch=master)](https://travis-ci.org/PGSSoft/ElasticOM)
+[![Build Status](https://img.shields.io/travis/PGSSoft/ElasticOM/master.svg)](https://travis-ci.org/PGSSoft/ElasticOM)
+[![Code Coverage](https://img.shields.io/scrutinizer/coverage/g/PGSSoft/ElasticOM/master.svg)](https://scrutinizer-ci.com/g/PGSSoft/ElasticOM/?branch=master)
+[![Code Quality](https://img.shields.io/scrutinizer/g/PGSSoft/ElasticOM/master.svg)](https://scrutinizer-ci.com/g/PGSSoft/ElasticOM/?branch=master)
 
 Elasticsearch Object Mapper. Includes integration with Symfony 2.7+ and Zend Framework 3.
 

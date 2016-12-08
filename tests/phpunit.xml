@@ -28,6 +28,7 @@
     </testsuites>
 
     <logging>
+        <log type='coverage-clover' target='coverage.xml' />
         <log type='coverage-text' target='php://stdout' showOnlySummary='true' />
     </logging>
 
