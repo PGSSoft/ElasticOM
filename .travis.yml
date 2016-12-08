@@ -30,5 +30,7 @@ install:
 script:
     - vendor/bin/phpcs --report-full --standard=PSR2 src tests
     - if [ ! $SKIP_PHP_CS_FIXER ]; then vendor/bin/php-cs-fixer fix --config=tests/php-cs-fixer.config.php --dry-run --diff src tests; fi
+    - vendor/bin/phpstan analyse --level=4 src
     - vendor/bin/types-checker --exclude=Pgs\\ElasticOM\\EntityRepository --exclude=Pgs\\ElasticOM\\Hydrator\\Hydrator --exclude=Pgs\\ElasticOM\\ObjectPool --exclude=Elasticsearch\\Serializers\\SerializerInterface --exclude=Tests\\Bridge\\Symfony\\ConfigurationTest --exclude=Zend\\Hydrator\\Strategy\\StrategyInterface --skip-return-types src tests
+    - vendor/bin/phpcpd src tests
     - phpdbg -qrr vendor/bin/phpunit -c tests/phpunit.xml

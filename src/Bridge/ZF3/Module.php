@@ -2,6 +2,8 @@
 
 namespace Pgs\ElasticOM\Bridge\ZF3;
 
+use Pgs\ElasticOM\EntityRepositoryManager;
+
 class Module
 {
     const CONFIG_KEY = 'elastic_om';
